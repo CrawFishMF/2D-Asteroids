@@ -1,0 +1,59 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <ui:Template name="PauseScreen" src="project://database/Assets/UI/InGameUI/PauseScreen.uxml?fileID=9197481963319205126&amp;guid=d01ed93b73a486640a1b1cdb45922e3b&amp;type=3#PauseScreen" />
+    <ui:Template name="WastedScreen" src="project://database/Assets/UI/InGameUI/WastedScreen.uxml?fileID=9197481963319205126&amp;guid=dd4cae6a78dc40447aeb0c45535cbe3c&amp;type=3#WastedScreen" />
+    <Style src="project://database/Assets/UI/StyleSheets/InGameStyle.uss?fileID=7433441132597879392&amp;guid=9379258c9abb21e46affc623eef5e307&amp;type=3#InGameStyle" />
+    <Style src="project://database/Assets/UI/StyleSheets/MainMenuStyle.uss?fileID=7433441132597879392&amp;guid=ebfe3bbf0c265124c9fed1085e5378fc&amp;type=3#MainMenuStyle" />
+    <MainGUI name="MainGUI" class="screen">
+        <ui:VisualElement name="background-screen" class="screen">
+            <ui:VisualElement name="screens" style="position: absolute; left: 0; top: 0; right: 0; bottom: 0;">
+                <ui:VisualElement name="pause-screen" class="opacity-0 display-0 screen">
+                    <ui:Instance template="PauseScreen" name="PauseScreen" class="screen" />
+                </ui:VisualElement>
+                <ui:VisualElement name="wasted-screen" class="opacity-0 display-0 screen" style="position: absolute; left: 0; top: 0; right: 0; bottom: 0;">
+                    <ui:Instance template="WastedScreen" name="WastedScreen" class="screen" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+            <ui:VisualElement name="header" style="position: absolute; left: 0; top: 0; right: 0; max-height: 50%; flex-direction: row; align-items: flex-start; justify-content: space-between; padding-left: 5px; padding-right: 5px; padding-top: 5px;">
+                <ui:VisualElement name="top-left-container" style="max-width: 50%;">
+                    <ui:VisualElement name="score-info-container" style="flex-direction: row;">
+                        <ui:Label text="Score:" display-tooltip-when-elided="true" name="score-text" class="text" />
+                        <ui:Label text="ain&apos;t loaded" display-tooltip-when-elided="true" name="score-label" class="text" />
+                    </ui:VisualElement>
+                </ui:VisualElement>
+                <ui:VisualElement name="top-right-container" style="max-width: 50%;" />
+            </ui:VisualElement>
+            <ui:VisualElement name="footer" style="left: 0; right: 0; bottom: 0; position: absolute; max-height: 50%; flex-direction: row; justify-content: space-between; align-items: flex-end; padding-left: 5px; padding-right: 5px; padding-bottom: 5px;">
+                <ui:VisualElement name="bottom-left-container" style="flex-direction: column; align-items: flex-start;">
+                    <ui:VisualElement name="info-container" style="flex-direction: row; align-items: center;">
+                        <ui:Label text="Speed:" display-tooltip-when-elided="true" name="speed-text" class="text" />
+                        <ui:Label text="ain&apos;t loaded" display-tooltip-when-elided="true" name="speed-label" class="text" />
+                    </ui:VisualElement>
+                    <ui:VisualElement name="info-container" style="flex-direction: row; align-items: center;">
+                        <ui:Label text="Coordinates:" display-tooltip-when-elided="true" name="coordinates-text" class="text" />
+                        <ui:Label text="ain&apos;t loaded" display-tooltip-when-elided="true" name="coordinates-label" class="text" />
+                    </ui:VisualElement>
+                    <ui:VisualElement name="info-container" style="flex-direction: row; align-items: center;">
+                        <ui:Label text="Rotation force:" display-tooltip-when-elided="true" name="angle-text" class="text" />
+                        <ui:Label text="ain&apos;t loaded" display-tooltip-when-elided="true" name="angle-label" class="text" />
+                    </ui:VisualElement>
+                </ui:VisualElement>
+                <ui:VisualElement name="bottom-right-container" style="flex-direction: row; align-items: flex-end; justify-content: flex-end;">
+                    <ui:VisualElement name="ray-reload-container">
+                        <ui:Label text="ray reloads:" display-tooltip-when-elided="true" name="ray-reload-text" class="text" />
+                        <ui:VisualElement name="ray-container" style="flex-direction: row; justify-content: space-around; align-items: center; margin-bottom: 5px;">
+                            <ui:VisualElement name="ray-background-icon" class="ray-icon-background">
+                                <ui:VisualElement name="ray-icon" class="ray-icon" />
+                            </ui:VisualElement>
+                            <ui:VisualElement name="ray-background-icon" class="ray-icon-background">
+                                <ui:VisualElement name="ray-icon" class="ray-icon" />
+                            </ui:VisualElement>
+                            <ui:VisualElement name="ray-background-icon" class="ray-icon-background">
+                                <ui:VisualElement name="ray-icon" class="ray-icon" />
+                            </ui:VisualElement>
+                        </ui:VisualElement>
+                    </ui:VisualElement>
+                </ui:VisualElement>
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </MainGUI>
+</ui:UXML>

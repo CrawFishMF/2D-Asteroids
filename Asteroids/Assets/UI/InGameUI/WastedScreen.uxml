@@ -1,0 +1,17 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI/StyleSheets/InGameStyle.uss?fileID=7433441132597879392&amp;guid=9379258c9abb21e46affc623eef5e307&amp;type=3#InGameStyle" />
+    <Style src="project://database/Assets/UI/StyleSheets/MainMenuStyle.uss?fileID=7433441132597879392&amp;guid=ebfe3bbf0c265124c9fed1085e5378fc&amp;type=3#MainMenuStyle" />
+    <ui:VisualElement name="background-screen" class="screen" style="background-color: rgba(0, 0, 0, 0.35); align-items: stretch; justify-content: center;">
+        <ui:VisualElement name="body" style="background-color: rgba(0, 0, 0, 0.62);">
+            <ui:Button text="play again" display-tooltip-when-elided="true" name="reload-game-button" focusable="false" class="menu-button text" />
+            <ui:VisualElement name="final-score-container" style="margin-top: 20px; margin-bottom: 20px; flex-direction: row; align-items: center; justify-content: center;">
+                <ui:Label text="final score: " display-tooltip-when-elided="true" name="final-score-text" class="text" />
+                <ui:Label text="ain&apos;t loaded" display-tooltip-when-elided="true" name="final-score-label" class="text" />
+            </ui:VisualElement>
+            <ui:VisualElement name="label-container" style="margin-top: 200px; margin-bottom: 20px;">
+                <ui:Label text="Beter luck next time" display-tooltip-when-elided="true" name="wasted-bottom-text" class="text" style="-unity-text-align: upper-center;" />
+            </ui:VisualElement>
+            <ui:Button text="exit game" display-tooltip-when-elided="true" name="exit-button" focusable="false" class="menu-button text" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

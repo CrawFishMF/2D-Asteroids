@@ -1,0 +1,47 @@
+.screen {
+    flex-grow: 1;
+    transition-property: opacity;
+    transition-duration: 0.3s;
+}
+
+.text {
+    font-size: 36px;
+    color: rgb(255, 255, 255);
+    -unity-font-style: bold;
+    -unity-text-outline-width: 1px;
+    -unity-text-outline-color: rgb(0, 0, 0);
+    text-shadow: 0 0 3px rgb(0, 0, 0);
+}
+
+.menu-button {
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border-left-width: 0;
+    border-right-width: 0;
+    border-top-width: 0;
+    border-bottom-width: 0;
+    background-color: rgba(0, 0, 0, 0);
+    transition-duration: 0.2s;
+    transition-property: scale;
+    font-size: 48px;
+    -unity-text-outline-width: 2px;
+    text-shadow: 0 0 5px rgb(0, 0, 0);
+}
+
+.menu-button:hover {
+    transition-duration: 0.2s;
+    transition-property: scale;
+    scale: 1.05 1.05;
+}
+
+.menu-button:active {
+    scale: 0.95 0.95;
+    transition-duration: 0s;
+    transition-property: scale;
+}

@@ -1,0 +1,22 @@
+.ray-icon-background {
+    width: 25px;
+    height: 75px;
+    background-color: rgba(159, 255, 30, 0.3);
+}
+
+.ray-icon {
+    flex-grow: 1;
+    background-color: rgb(159, 255, 30);
+    transition-property: opacity;
+    transition-duration: 3s;
+    transition-timing-function: ease-in-bounce;
+    transform-origin: bottom;
+}
+
+.opacity-0 {
+    opacity: 0;
+}
+
+.display-0 {
+    display: none;
+}

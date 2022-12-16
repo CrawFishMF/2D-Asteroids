@@ -1,0 +1,20 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI/StyleSheets/MainMenuStyle.uss?fileID=7433441132597879392&amp;guid=ebfe3bbf0c265124c9fed1085e5378fc&amp;type=3#MainMenuStyle" />
+    <TitleScreen class="screen">
+        <ui:VisualElement name="background-screen" class="screen" style="background-image: resource(&apos;Graphics/black-space&apos;); -unity-background-scale-mode: scale-and-crop;">
+            <ui:VisualElement name="header" style="position: absolute; left: 0; right: 0; top: 0; height: 100px; flex-direction: row; align-items: center; justify-content: center; padding-top: 5px; padding-left: 5px; padding-right: 5px; padding-bottom: 0;">
+                <ui:Label text="Asteroids" display-tooltip-when-elided="true" name="title-label" class="text" style="font-size: 72px; margin-left: 0; margin-right: 0; margin-top: 0; margin-bottom: 0; padding-left: 0; padding-right: 0; padding-top: 0; padding-bottom: 0; -unity-text-outline-width: 3px; text-shadow: 0 0 8px rgb(0, 0, 0);" />
+            </ui:VisualElement>
+            <ui:VisualElement name="body" style="position: absolute; left: 0; top: 100px; right: 0; bottom: 100px; padding-left: 5px; padding-right: 5px; align-items: center; justify-content: space-around;">
+                <ui:VisualElement name="menu-buttons-container" style="padding-bottom: 15px; padding-top: 15px;">
+                    <ui:Button text="Play" display-tooltip-when-elided="true" name="play-button" focusable="false" class="menu-button text" />
+                    <ui:Button text="Exit" display-tooltip-when-elided="true" name="exit-button" focusable="false" class="menu-button text" />
+                </ui:VisualElement>
+                <ui:VisualElement name="info-container">
+                    <ui:Label text="Accelerate - W / ↑&#10;Left - A / ←&#10;Right - D / →&#10;&#10;Shoot - Left Mouse / spacebar&#10;Ray cast - Right Mouse / Alt" display-tooltip-when-elided="true" name="input-help-label" class="text" style="-unity-text-align: upper-center;" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+            <ui:VisualElement name="footer" style="position: absolute; bottom: 0; right: 0; left: 0; height: 100px; flex-direction: row; align-items: center; justify-content: center; padding-left: 5px; padding-right: 5px; padding-top: 0; padding-bottom: 5px;" />
+        </ui:VisualElement>
+    </TitleScreen>
+</ui:UXML>
